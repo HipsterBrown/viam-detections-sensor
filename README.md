@@ -6,10 +6,10 @@ This [module](https://docs.viam.com/registry/modular-resources/) implements the 
 
 This module assumes you have an existing vision service, like a [mlmodel](https://docs.viam.com/operate/reference/services/vision/mlmodel/) or [YOLOv8](https://github.com/viam-labs/YOLOv8).
 
-## Configure your pi-ai-camera vision service
+## Configure your detections sensor component
 
 Navigate to the [**CONFIGURE** tab](https://docs.viam.com/configure/) of your [machine](https://docs.viam.com/fleet/machines/) in the [Viam app](https://app.viam.com/).
-[Add `hipsterbrown:transform-camera-extended` to your machine](https://docs.viam.com/configure/#components).
+[Add `hipsterbrown:detections-sensor` to your machine](https://docs.viam.com/configure/#components).
 
 ### Attributes
 

@@ -17,10 +17,6 @@ setup:
 	if [ "$(UNAME_S)" = "Linux" ]; then \
 		sudo apt-get install -y apt-utils coreutils tar libnlopt-dev libjpeg-dev pkg-config; \
 	fi
-	# remove unused imports
-	go install golang.org/x/tools/cmd/goimports@latest
-	find . -name '*.go' -exec $(GOIMPORTS) -w {} +
-
 
 clean:
 	rm -rf $(BIN_OUTPUT_PATH)/detections-sensor $(BIN_OUTPUT_PATH)/module.tar.gz detections-sensor

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "hipsterbrown:detections-sensor",
+  "visibility": "public",
+  "url": "",
+  "description": "Modular sensor component: detections",
+  "models": [
+    {
+      "api": "rdk:component:sensor",
+      "model": "hipsterbrown:sensor:detections"
+    }
+  ],
+  "entrypoint": "bin/detections-sensor",
+  "first_run": "",
+  "build": {
+    "build": "canon make module.tar.gz",
+    "setup": "make setup",
+    "path": "bin/module.tar.gz",
+    "arch": [
+      "linux/amd64",
+      "linux/arm64"
+    ]
+  }
+}
